@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<div class="container-fluid">
+  <h1>Update Request!</h1>
+  <form (submit)='onSubmit()' class = 'formg-group' method='post' >
+    <br>
+    <h5>Previous Request: {{UserInfo.req_goal}}</h5>
+    Request: <input class='form-control' [(ngModel)] = 'updateTask.req_goal' type='text' name='req_goal'>
+    <br>
+    <button  type='submit'>Submit Update for {{UserInfo.name}}'s request</button> <button (click)='cancel()'>Cancel Update</button> 
+  </form>
+</div>
